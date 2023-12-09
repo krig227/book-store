@@ -1,0 +1,96 @@
+.TopPicks-Header {
+  height: 60px;
+  font-size: 1.25rem;
+  background-color: #9a4f6a;
+  color: #f9f9f9;
+  align-items: center;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.TopPicks-Container {
+  grid-column: 1/13;
+  margin: 8px;
+  border: 1px solid black;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #23182c;
+}
+
+.TopPicks-Header h3 {
+  margin-left: 5.5rem;
+}
+
+.brick-wall-container {
+  display: flex;
+  /* margin: 2rem; */
+  flex-direction: column;
+  overflow: hidden;
+  height: 384px;
+}
+
+/* .book {
+    background-color: #c0c0c0;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 5px;
+  } */
+
+/* .rotate-45 {
+  transform: rotate(45deg);
+  margin-left: 3rem;
+  margin-top: 2rem;
+  text-align: center;
+  margin-left: 9rem;
+  margin-top: -2rem;
+} */
+
+.rotate-45 {
+  transform: rotate(45deg);
+  text-align: center;
+  margin-left: 7.5rem;
+  margin-top: -4rem;
+  margin-right: -7rem;
+}
+
+/* .rotate-minus-45 {
+  transform: rotate(-45deg);
+  text-align: center;
+  margin-left: 2rem;
+  margin-top: -1rem;
+} */
+.rotate-minus-45 {
+  transform: rotate(-45deg);
+  text-align: end;
+  margin-left: 4rem;
+  margin-right: 5rem;
+  margin-top: -4.5rem;
+}
+
+.Cover-Image-Top {
+  width: 100px;
+  height: 140px;
+}
+
+.Cover-Image-Top:hover {
+  border: 2px solid #f9f9f9;
+}
+
+.book-row {
+  display: flex;
+  width: 100%;
+  /* margin-bottom: 2rem; */
+}
+
+.book {
+  width: 20%;
+}
+
+/* .Even-Row {
+  margin-left: 6rem;
+} */
+
+.Odd-Row {
+  margin-right: 2rem;
+}

@@ -1,0 +1,161 @@
+.Nav-Bar {
+  background-color: #f9f9f9;
+  /* height: 150px;
+  border-bottom: 2px solid #9e9e9e; */
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+  justify-content: space-between;
+  margin-left: 8.9%;
+  /* grid-column: 1/12; */
+}
+
+.Logo-Image {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  margin: 16px;
+  /* grid-column: 1 / 4; */
+}
+
+.Logo-Image img {
+  width: 100%;
+}
+
+.Nav-Bottom-List {
+  font-size: 16px;
+  font-weight: 900;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.Nav-Bottom {
+  margin-left: 30%;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-right: 24px;
+}
+
+/* .Grid-Nav {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 20px;
+} */
+.Nav-Bottom-List li {
+  display: flex;
+  font-weight: bolder;
+}
+nav .Chevron-Down {
+  width: 18px;
+  height: 18px;
+  margin-left: 8px;
+  margin-top: 2px;
+}
+
+.Nav-Top li {
+  /* display: flex;
+  align-items: center;
+  gap: 10px; */
+  margin-left: 36px;
+  margin-right: auto;
+}
+
+.Nav-Side {
+  margin-top: 2rem;
+  /* margin-right: 3.5rem; */
+}
+
+.Nav-Side-List {
+  display: flex;
+  list-style: none;
+  /* padding-left: 1rem;
+  padding-right: 1rem; */
+  font-size: 1rem;
+  align-items: center;
+}
+
+.Nav-Side-List li {
+  width: 8rem;
+  text-align: center;
+  /* margin-left: 3rem; */
+}
+.Nav-Bottom-End {
+  display: flex;
+  margin-left: 8.9%;
+  height: 3rem;
+  background-color: #9a4f6a;
+  font-size: 1rem;
+  align-items: center;
+}
+.Nav-Bottom-end-list {
+  display: flex;
+  color: #f9f9f9;
+  list-style: none;
+  height: 100%;
+  width: 100%;
+}
+
+.Nav-Bottom-end-listitem {
+  padding: 1rem;
+}
+
+.Nav-Bottom-end-Sidelistitem {
+  padding-left: 1rem;
+}
+
+.Nav-Bottom-End-Sidelist {
+  /* padding: 1rem; */
+  border-left: #a09da9 3px solid;
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* .Nav-Bottom-End-Sidelist li {
+  padding: 1rem;
+} */
+
+.Cart-Primary-Three {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  background-color: #a7939b;
+  color: #f9f9f9;
+  width: 12rem;
+  font-size: 1rem;
+  border: none;
+  justify-content: center;
+  font-weight: bolder;
+}
+
+.MyCart-Icon {
+  width: 3rem;
+  height: 3rem;
+  padding-right: 0.5rem;
+}
+
+.Cart-Circle {
+  border-radius: 50%;
+  position: relative;
+  top: -4px;
+  background-color: #9a4f6a;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.5rem;
+}
+
+.Cart-Count {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Nav-Link {
+  text-decoration: none;
+  color: #f9f9f9;
+}

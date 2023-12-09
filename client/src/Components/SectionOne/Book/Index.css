@@ -1,0 +1,76 @@
+.Book-Container {
+  background: radial-gradient(
+    199.83% 86.06% at 9.76% 23.92%,
+    #9a4f6a 8.33%,
+    #aa845b 100%
+  );
+  width: 33.33%;
+  height: 200px;
+  margin-top: 64px;
+  margin-left: 16px;
+  position: relative;
+}
+
+.Book-Container h3 {
+  color: #f9f9f9;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.Cover-Image {
+  height: 168px;
+  width: 112px;
+  position: absolute;
+  top: -48px;
+  margin: 1rem;
+}
+
+.Book-Details {
+  position: absolute;
+  margin-top: 16px;
+  margin-left: 142px;
+}
+
+.Genre-Button {
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  background-color: #a7939b;
+  color: #f9f9f9;
+  margin-right: 8px;
+  font-size: 10px;
+  margin-bottom: 4px;
+}
+
+.AddToCart-Button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #a7939b;
+  color: #f9f9f9;
+  border: none;
+  font-size: 1rem;
+  padding: 8px 16px;
+  display: none;
+  cursor: pointer;
+}
+
+.AddToCart-Button:hover {
+  background-color: #aa845b;
+}
+
+.Book-Container:hover .AddToCart-Button {
+  display: block;
+}
+
+.Book-Container h4 {
+  color: #f9f9f9;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.Book-Container:hover .Cover-Image {
+  top: -64px;
+  transition: 0.1s linear;
+}

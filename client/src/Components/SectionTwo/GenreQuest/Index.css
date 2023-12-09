@@ -1,0 +1,133 @@
+.Section-Sub {
+  grid-column: 1/10;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  margin: 0 8px;
+}
+.Genre-Container {
+  grid-column: 1/6;
+  border: 1px solid #9a4f6a;
+  padding: 0.5rem;
+  background-color: #9a4f6a;
+  color: #f9f9f9;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Snap-Redeem-Conatiner {
+  grid-column: 6/12;
+  border: 2px solid #9a4f6a;
+  margin: 0 1rem;
+  border-radius: 4px;
+}
+
+.Upcoming-Events-Container {
+  grid-column: 12/19;
+  border: 2px solid #9a4f6a;
+  background-color: #9a4f6a;
+  border-radius: 4px;
+  position: relative;
+}
+.Calendar-Effect {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.Upcoming-Events-Header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Upcoming-Date-Details {
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  color: #f9f9f9;
+}
+.Upcoming-Details {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+}
+.Upcoming-Rectangle {
+  width: 8px;
+  height: 64px;
+  border-radius: 4px;
+  background: linear-gradient(180deg, #a7939b 0%, #aa845b 100%);
+  margin-right: 0.5rem;
+}
+
+.Upcoming-Register {
+  border: none;
+  color: #f9f9f9;
+}
+.Upcoming-Register:hover {
+  color: #aa845b;
+}
+
+.Upcoming-EventName {
+  color: #f9f9f9;
+}
+
+.Upcoming-EventPara {
+  color: #f9f9f9;
+  font-weight: lighter;
+  margin: 0.5rem 0;
+}
+
+.Upcoming-Events-Content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.Upcoming-Events-Header h3 {
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 1rem;
+  color: #f9f9f9;
+}
+
+.Line-Events {
+  width: 90%;
+  border-bottom: 2px solid #a7939c;
+}
+
+.Genre-List {
+  list-style: none;
+}
+.Genre-Header {
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+.Genre-Container h3 {
+  font-size: 1rem;
+  font-weight: bolder;
+  text-align: center;
+}
+.Genre-Listitem {
+  font-size: 1rem;
+  font-weight: lighter;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.Subscribe-Button {
+  height: 2.5rem;
+  background-color: #aa845b;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: none;
+  margin: 1rem 1rem;
+  border-radius: 4px;
+  color: #f9f9f9;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  cursor: pointer;
+}

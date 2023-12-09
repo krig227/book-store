@@ -1,0 +1,185 @@
+.Cart-Container {
+  margin-left: 9.2%;
+  display: flex;
+  padding-left: 7rem;
+}
+.Cart-Content-Header {
+  height: 4rem;
+  background-color: #a7939b;
+  color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+.Cart-LeftSide {
+  margin: 1rem;
+  padding-top: 5rem;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Cart-Content-Container {
+  margin: 1rem;
+  border-radius: 4px;
+  border: 2px solid #a7939b;
+  width: 100%;
+}
+.Cart-Book-Cover {
+  margin: 1rem;
+  width: 100px;
+  height: 125px;
+  flex: 20%;
+}
+.Book-Cover-Cart {
+  width: 100px;
+  height: 125px;
+}
+.Cart-Book-Container {
+  display: flex;
+}
+
+.Cart-Misc-Details {
+  display: flex;
+  flex: 40%;
+  gap: 1rem;
+  height: 4rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.Total-Details-Cart {
+  display: flex;
+  flex-direction: column;
+}
+
+.Button-Cart-Incdec {
+  font-size: 1rem;
+  color: #23182c;
+  border: none;
+  background-color: #f9f9f9;
+}
+
+.Price-Details-Cart {
+  display: flex;
+  flex-direction: column;
+}
+
+.Cart-Book-Title {
+  margin: 1rem;
+}
+
+.Cart-Book-Author {
+  margin: 1rem;
+}
+
+.Line-Cart-Remove {
+  width: 0.1rem;
+  background-color: #9a4f6a;
+}
+
+.Gift-Cart-Button {
+  border: none;
+  font-weight: bolder;
+  font-size: 14px;
+  color: #aa845b;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.Book-Remove-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.Cart-Book-Details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 40%;
+}
+
+.Quantity-Details-Cart {
+  display: flex;
+  height: 2rem;
+}
+
+.IncDec-Cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.Discount-Cart-input {
+  display: flex;
+  width: 100%;
+}
+.Discount-Input-Cart {
+  margin: 0;
+  height: 2rem;
+  padding: 1rem;
+  border-right: none;
+  border-color: #9a4f6a;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.Apply-Cart-Button {
+  background-color: #aa845b;
+  border: none;
+  color: #f9f9f9;
+  padding: 0rem 1rem;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.Cart-RightSide {
+  width: 35%;
+}
+
+.Cart-Order-Header {
+  padding: 1rem;
+  border-bottom: 2px solid #9a4f6a;
+}
+
+.Cart-Right-Header {
+  padding: 1rem;
+}
+
+.Cart-Order-Content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  border-bottom: 2px solid #9a4f6a;
+}
+
+.Space-Between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Cart-Order-Total {
+  padding: 1rem;
+}
+
+.Cart-Total-Right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem;
+  border: 2px solid #9a4f6a;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.Checkout-Button-Cart {
+  background-color: #aa845b;
+  color: #f9f9f9;
+  padding: 0.5rem;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.25rem;
+}

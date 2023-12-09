@@ -1,0 +1,10 @@
+.Theme-Container {
+  grid-column: 10/13;
+  grid-row: 5/8;
+  background-image: url("../../../images/Faq-Picture-group.png");
+  background-size: cover;
+  height: 776px;
+  width: 242px;
+  z-index: 0;
+  margin-left: 2rem;
+}

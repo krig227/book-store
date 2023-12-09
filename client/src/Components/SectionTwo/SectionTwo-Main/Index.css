@@ -1,0 +1,12 @@
+.Section-Two {
+  width: 90.5%;
+  /* height: 100vh; */
+  background-color: #f9f9f9;
+  margin-left: 9.2%;
+  margin-top: 16px;
+  /* margin-bottom: 16px; */
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+}

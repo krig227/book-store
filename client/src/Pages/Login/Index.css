@@ -1,0 +1,103 @@
+.Login-Container {
+  background-color: #23182c;
+  display: flex;
+  margin-left: 9.2%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  width: 60%;
+  border-radius: 4px;
+}
+
+.Login-Main-Container {
+  display: flex;
+  justify-content: center;
+}
+
+.Login-Image {
+  /* padding: 4rem 1.5rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Login-Image.hovered {
+  transform: scale(1.1);
+}
+
+.Login-CoverImage {
+  width: 90%;
+  height: 70%;
+}
+
+.Login-Field-Container {
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  width: 50%;
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+
+.Login-Header {
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: bolder;
+}
+
+.Login-Text-header {
+  width: 70%;
+  margin-top: 1rem;
+  padding-left: 0.25rem;
+  font-weight: bolder;
+  text-align: left;
+}
+
+.Input-Style {
+  margin-top: 1rem;
+  border: none;
+  border-bottom: 2px solid #9a4f6a;
+  background-color: #f9f9f9;
+  width: 70%;
+  outline: none;
+  font-size: 1rem;
+  padding-left: 0.5rem;
+}
+
+.Input-Style::placeholder {
+  color: #9a4f6a;
+  font-size: 16px;
+  padding-left: 5px;
+}
+
+.Input-Login-Form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Forgot-Login-Link {
+  width: 70%;
+  text-decoration: none;
+  color: #23182c;
+  font-weight: lighter;
+}
+
+.Forgot-Login {
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+  text-align: right;
+}
+
+.Terms-Login {
+  margin: 1rem 0;
+  font-size: 0.75rem;
+  color: #a7939b;
+  width: 70%;
+}
+
+.Signup-Link {
+  margin: 0.5rem 0;
+  color: #23182c;
+}

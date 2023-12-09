@@ -1,0 +1,217 @@
+.Book-Details-Container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-left: 9.2%;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+}
+
+.Left-Details {
+  grid-column: 1/5;
+  grid-row: 1/3;
+  margin: 0.5rem;
+}
+
+.Rating-Details-Container {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+}
+
+.Rating-Snapshot {
+  margin: 1rem 2rem;
+}
+
+.Rating-Details-Container h4,
+p,
+.Rating-Details-Count,
+.Average-Rating-Container h4,
+.Average-Rating-Container p {
+  margin: 0.5rem;
+}
+
+.Average-Rating-Container {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+}
+
+.Bar-Rating-Details {
+  width: 8rem;
+  height: 0.5rem;
+  background-color: #aa845b;
+}
+
+.Review-Stats {
+  display: flex;
+  margin: 1rem;
+  justify-content: space-around;
+}
+
+.Review-Button-Details {
+  color: #f9f9f9;
+  background-color: #a7939b;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.25rem;
+}
+
+.Booktype-Details-Container {
+  margin-bottom: 1rem;
+}
+
+.Right-Details {
+  grid-column: 5/10;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 288px;
+}
+
+.Book-Name-details {
+  margin: 1rem 0;
+  font-size: 1.25rem;
+}
+
+.Book-Author-details {
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+.Book-type-Details {
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+.Publish-Date-Details {
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+.Booktype-Details {
+  text-align: center;
+  padding: 0.5rem 2rem;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+}
+
+.Ship-Details {
+  display: flex;
+  flex-direction: column;
+  grid-column: 5/13;
+  border: 2px solid #9a4f6a;
+  margin: 0.5rem;
+}
+
+.Ship-Button-Container {
+  display: flex;
+}
+
+.Ship-Details-Header {
+  margin: 1rem;
+}
+
+.Ship-Button-Container {
+  padding: 1rem;
+  align-items: center;
+}
+
+.Addtocart-Primary {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+  background-color: #a7939b;
+  color: #f9f9f9;
+  width: 16%;
+}
+
+.Ship-Icon {
+  margin-right: 4rem;
+}
+
+.Ship-Deliverydetails {
+  display: flex;
+  margin-right: 4rem;
+  width: 50%;
+}
+/* 
+.Ship-Deliverydetails h4 {
+  flex: 50%;
+} */
+
+.Borrow-Primary {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+  background-color: #aa845b;
+  color: #f9f9f9;
+  width: 16%;
+}
+
+.Tab-Headers {
+  display: flex;
+  grid-column: 1/13;
+  justify-content: space-around;
+  margin: 3rem 1rem 1rem 1rem;
+  border-bottom: 1px solid #9a4f6a;
+}
+
+.Tab-Content {
+  grid-column: 1/13;
+  margin: 1rem;
+}
+
+.Tab-Content p {
+  line-height: 2rem;
+}
+
+.tab-header {
+  height: 100%;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.active {
+  padding: 1rem;
+  outline: 1px solid #f9f9f9;
+  border-top: 1px solid #9a4f6a;
+  border-left: 1px solid #9a4f6a;
+  border-right: 1px solid #9a4f6a;
+}
+
+.Left-Review-Details {
+  grid-column: 1/4;
+}
+
+.Right-Review-Details {
+  grid-column: 4/13;
+}
+
+.Right-Review-Details h3 {
+  margin: 0.5rem;
+}
+
+.Recommended-Details {
+  margin: 0.5rem;
+}
+
+.List-Item-Review {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.Delivery-Details {
+  width: 50px;
+  height: 50px;
+}
+
+.Book-Details-Cover {
+  width: 24rem;
+}
+
+.BorrowCart-Details {
+  width: 50px;
+  height: 50px;
+}

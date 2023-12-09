@@ -1,0 +1,71 @@
+.Category-Container {
+  grid-column: 1/13;
+  border: 1px solid black;
+  margin: 8px;
+  border-radius: 4px;
+  height: 376px;
+  position: relative;
+}
+
+.Category-Header {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  background-color: #9a4f6a;
+  align-items: center;
+}
+
+.Category-Header h2 {
+  margin-left: 5.5rem;
+  color: #f9f9f9;
+  font-size: 1.25rem;
+}
+
+.Secondary-Button {
+  margin-right: 2.5rem;
+  font-size: 1rem;
+  padding: 4px 16px;
+  border-radius: 4px;
+  border: none;
+}
+
+.Books-Carousel-Container {
+  display: flex;
+  margin-right: 2rem;
+  margin-left: 1rem;
+  transition: transform 0.5s ease-in;
+  scroll-behavior: smooth;
+}
+
+.NextButton {
+  position: absolute;
+  top: 200px;
+  right: 6px;
+  background-color: #f9f9f9;
+  border: none;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+.PrevButton {
+  position: absolute;
+  top: 200px;
+  left: 6px;
+  background-color: #f9f9f9;
+  border: none;
+  cursor: pointer;
+}
+
+.NextButton:disabled .Chevron-Right path {
+  fill: #ccc;
+}
+
+.PrevButton:disabled .Chevron-Right path {
+  fill: #ccc;
+}
+
+.Chevron-Right {
+  width: 20px;
+  height: 20px;
+}

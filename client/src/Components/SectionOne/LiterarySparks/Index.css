@@ -1,0 +1,63 @@
+.Literary-Container {
+  grid-column: 10/13;
+  /* grid-row: 2/3; */
+  border-radius: 4px;
+  border: 2px solid #9a4f6a;
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+  height: 288px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  /* opacity: 0.3; */
+}
+
+.Literary-Header {
+  display: flex;
+  text-align: center;
+  height: 3rem;
+  background-color: #9a4f6a;
+  align-items: center;
+  /* border-radius: 4px; */
+  justify-content: center;
+  z-index: 2;
+}
+
+.Literary-Header h3 {
+  color: #f9f9f9;
+  font-weight: bolder;
+}
+
+.Literary-Quote {
+  font-size: 1rem;
+  font-weight: bolder;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #23182c;
+}
+
+.Literary-Book {
+  font-size: 1rem;
+  font-weight: bolder;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
+  color: #23182c;
+}
+
+.Literary-Author {
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1rem;
+  color: #23182c;
+}

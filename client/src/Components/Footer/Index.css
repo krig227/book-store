@@ -1,0 +1,75 @@
+.Footer-Container {
+  margin-left: 8.9%;
+  margin-top: 1rem;
+}
+
+.Footer-Content {
+  display: flex;
+  justify-content: space-between;
+  color: #f9f9f9;
+  align-items: center;
+  padding: 5rem 4rem;
+}
+
+.Footer-Content {
+  height: 18rem;
+  background-color: #23182c;
+}
+
+.Copyright-Footer {
+  display: flex;
+  background-color: #a7939b;
+  color: #f9f9f9;
+  padding-left: 1rem;
+  height: 2.5rem;
+  align-items: center;
+}
+
+.Contact-Us h3 {
+  margin-bottom: 0.5rem;
+}
+
+.Contact-Us p {
+  margin-bottom: 0.5rem;
+}
+
+.Sub-Box {
+  width: 60px;
+  height: 60px;
+  fill: #f9f9f9;
+}
+
+.Footer-MidSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Social-Icon {
+  width: 30px;
+  height: 30px;
+  fill: #f9f9f9;
+}
+
+.Social-Icon-Footer {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Button-Footer {
+  background-color: #aa845b;
+  padding: 16px 8px;
+  border-radius: 4px;
+  border: none;
+  color: #f9f9f9;
+}
+
+.Suggestion-Button {
+  display: flex;
+}
+
+.Suggestion-Logo {
+  margin: 1rem 0;
+}

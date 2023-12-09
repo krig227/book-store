@@ -1,0 +1,69 @@
+.Explore-container {
+  grid-column: 1/10;
+  grid-row: 3/5;
+  border: 2px solid #9a4f6a;
+  margin: 0.5rem;
+  border-radius: 4px;
+}
+
+.Explore-Header {
+  margin-top: 1rem;
+  height: 60px;
+  background-color: #9a4f6a;
+  color: #f9f9f9;
+  display: flex;
+  align-items: center;
+}
+
+.Explore-Header h3 {
+  font-size: 1.25rem;
+  margin-left: 5.5rem;
+}
+.Explore-Content-Link {
+  flex-basis: 20%;
+  text-decoration: none;
+  color: #23182c;
+  display: flex;
+  justify-content: center;
+}
+.Explore-Content {
+  height: 125px;
+  width: 125px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Explore-Content-Container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Category-Icon:hover path,
+.Explore-Icon:hover {
+  fill: #aa845b;
+  color: #aa845b;
+  border: 1px solid #aa845b;
+}
+
+.Category-Icon:hover path,
+.Explore-Content-Link:hover {
+  color: #aa845b;
+}
+
+.Explore-Icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #9a4f6a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.Category-Icon {
+  width: 50%;
+  height: 50%;
+}

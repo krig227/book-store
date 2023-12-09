@@ -1,0 +1,88 @@
+.FAQ-Container {
+  grid-column: 10/13;
+  grid-row: 3/10;
+  border: 2px solid #9a4f6a;
+  border-radius: 4px;
+  margin: 8px;
+  color: #23182c;
+  padding: 1rem;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  z-index: 1;
+  background-color: #f9f9f9;
+}
+
+.dropdown {
+  color: #9a4f6a;
+  padding-bottom: 0.5rem;
+}
+
+.Selected-Category {
+  padding-left: 0.5rem;
+  color: #9a4f6a;
+  border: 1px #23182c solid;
+  border-radius: 4px;
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow {
+  margin-right: 0.5rem;
+}
+
+.dropdown-overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.3); /* Semi-transparent background overlay */
+  z-index: 1;
+}
+/* 970 960 */
+
+.dropdown-options {
+  border: 1px solid #9a4f6a;
+  border-radius: 4px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.Option-Item {
+  padding: 0.5rem;
+}
+
+.Faq-Content {
+  padding: 0.5rem 0.5rem;
+}
+
+.FAQ-Header h3 {
+  padding-bottom: 0.5rem;
+  font-weight: bolder;
+}
+
+.Faq-Content ul {
+  list-style: none;
+}
+
+.Faq-Content li {
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.FAQ-Header {
+  padding-bottom: 1rem;
+}
+
+.answer {
+  padding-top: 0.5rem;
+  font-weight: 600;
+  color: #9a4f6a;
+}
+
+.question {
+  list-style: none;
+  text-decoration: none;
+  text-align: left;
+  color: #23182c;
+}

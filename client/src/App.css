@@ -1,0 +1,73 @@
+/* 2xl */
+/* @media (max-width: 1536px) {
+} */
+
+/* xl */
+/* @media (max-width: 1280px) {
+} */
+
+/* lg */
+/* @media (max-width: 1024px) {
+} */
+
+/* md */
+/* @media (max-width: 768px) {
+} */
+
+/* sm */
+/* @media (max-width: 640px) {
+} */
+
+/* xs */
+/* @media (max-width: 475px) {
+} */
+
+.Container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: grid;
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+  .Container {
+    max-width: 100%;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .Container {
+    max-width: 100%;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .Container {
+    max-width: 100%;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .Container {
+    max-width: 100%;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .Container {
+    max-width: 100%;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .Container {
+    width: 100%;
+  }
+}

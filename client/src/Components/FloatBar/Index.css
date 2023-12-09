@@ -1,0 +1,18 @@
+.Left-FloatBar {
+  width: 8.9%;
+  background-color: #a7939b;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Floatbar-Icon {
+  width: 30px;
+  height: 30px;
+  fill: #f9f9f9;
+}

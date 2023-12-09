@@ -1,0 +1,73 @@
+.Explore-container-Exam {
+  grid-column: 1/10;
+  grid-row: 5/7;
+  border: 2px solid #9a4f6a;
+  margin: 0.5rem;
+  border-radius: 4px;
+}
+
+.Explore-Header-Exam {
+  margin-top: 1rem;
+  height: 60px;
+  background-color: #9a4f6a;
+  color: #f9f9f9;
+  display: flex;
+  align-items: center;
+}
+
+.Explore-Header-Exam h3 {
+  font-size: 1.25rem;
+  margin-left: 5.5rem;
+}
+.Explore-Content-Link-Exam {
+  flex-basis: 20%;
+  text-decoration: none;
+  color: #23182c;
+  display: flex;
+  justify-content: center;
+}
+.Explore-Content-Exam {
+  height: 125px;
+  width: 125px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Explore-category-Exam h5 {
+  text-align: center;
+}
+
+.Explore-Content-Container-Exam {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Category-Icon-Exam:hover path,
+.Explore-Icon-Exam:hover {
+  fill: #aa845b;
+  color: #aa845b;
+  border: 1px solid #aa845b;
+}
+
+.Category-Icon-Exam:hover path,
+.Explore-Content-Link-Exam:hover {
+  color: #aa845b;
+}
+
+.Explore-Icon-Exam {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #9a4f6a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.Category-Icon-Exam {
+  width: 50%;
+  height: 50%;
+}

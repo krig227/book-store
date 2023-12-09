@@ -1,0 +1,45 @@
+.custom-carousel-container {
+  grid-column: 1/10;
+  grid-row: 2/3;
+  margin: 8px;
+  position: relative;
+}
+
+.carousel-content {
+  height: 100%;
+}
+
+.Img-Carousel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.Left-Button {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  left: 8px;
+  background-color: #f9f9f9;
+}
+
+.Right-Button {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  right: 8px;
+  border: none;
+  transform: translateY(-50%) rotate(180deg);
+  background-color: #f9f9f9;
+}
+
+.chevron-Left {
+  width: 30px;
+  height: 30px;
+}
+
+.chevron-Left:hover path {
+  fill: #aa845b; /* New color on hover */
+}

@@ -5,9 +5,14 @@ import { Link } from "react-router-dom";
 const TopPicks = () => {
   const [books, setBooks] = useState([]);
 
+  const apiUrl =
+    process.env.NODE_ENV === "development"
+      ? process.env.REACT_APP_API_URL
+      : process.env.REACT_APP_PROD_API_URL;
+
   useEffect(() => {
     // Fetch data from your API
-    fetch("http://localhost:8080/api/categories/toppicksofthemonth")
+    fetch(`${apiUrl}/categories/toppicksofthemonth`)
       .then((response) => response.json())
       .then((data) => setBooks(data))
       .catch((error) => console.error("Error fetching books:", error));

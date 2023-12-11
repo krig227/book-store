@@ -12,6 +12,11 @@ const Login = () => {
   const [isHovered, setIsHovered] = useState(false);
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const apiUrl =
+    process.env.NODE_ENV === "development"
+      ? process.env.REACT_APP_API_URL
+      : process.env.REACT_APP_PROD_API_URL;
+
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
   };
@@ -21,7 +26,7 @@ const Login = () => {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:8080/api/users/login", {
+    const response = await fetch(`${apiUrl}/users/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

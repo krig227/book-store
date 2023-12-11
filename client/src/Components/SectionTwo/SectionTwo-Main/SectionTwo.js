@@ -9,13 +9,17 @@ import GenreQuest from "../GenreQuest/GenreQuest";
 import Faqtheme from "../FaqTheme/Faqtheme";
 
 const SectionTwo = () => {
+  const apiUrl =
+    process.env.NODE_ENV === "development"
+      ? process.env.REACT_APP_API_URL
+      : process.env.REACT_APP_PROD_API_URL;
   return (
     <>
       <section>
         <div className="Section-Two">
           <TopPicks />
           <Carousel
-            apiEnd="http://localhost:8080/api/categories/newArrivals"
+            apiEnd={`${apiUrl}/categories/newArrivals`}
             catName="New Arrivals"
           />
           <FAQ />

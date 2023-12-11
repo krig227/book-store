@@ -6,9 +6,13 @@ import { Link } from "react-router-dom";
 
 const GenreQuest = () => {
   const [Data, setData] = useState([]);
+  const apiUrl =
+    process.env.NODE_ENV === "development"
+      ? process.env.REACT_APP_API_URL
+      : process.env.REACT_APP_PROD_API_URL;
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/upcomingevents/upcoming")
+    fetch(`${apiUrl}/upcomingevents/upcoming`)
       .then((response) => response.json())
       .then((data) => setData(data))
       .catch((error) => console.error("Error fetching data:", error));

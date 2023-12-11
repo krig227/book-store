@@ -13,6 +13,11 @@ const BookListing = () => {
     return filledStars + emptyStars;
   };
 
+  const apiUrl =
+    process.env.NODE_ENV === "development"
+      ? process.env.REACT_APP_API_URL
+      : process.env.REACT_APP_PROD_API_URL;
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -20,14 +25,14 @@ const BookListing = () => {
 
         switch (category) {
           case "newarrivals":
-            apiEndpoint = "http://localhost:8080/api/categories/newarrivals";
+            apiEndpoint = `${apiUrl}/categories/newarrivals`;
             break;
           case "all-books":
             apiEndpoint = "API_ENDPOINT_FOR_ALL_BOOKS";
             break;
 
           case "trending":
-            apiEndpoint = "http://localhost:8080/api/categories/trending";
+            apiEndpoint = `${apiUrl}/categories/trending`;
             break;
 
           default:
@@ -42,9 +47,9 @@ const BookListing = () => {
               "Others",
             ];
             if (languages.includes(category)) {
-              apiEndpoint = `http://localhost:8080/api/categories/language?language=${category}`;
+              apiEndpoint = `${apiUrl}/categories/language?language=${category}`;
             } else {
-              apiEndpoint = `http://localhost:8080/api/categories/genre?selectedGenre=${category}`;
+              apiEndpoint = `${apiUrl}/categories/genre?selectedGenre=${category}`;
             }
             break;
         }
@@ -54,7 +59,7 @@ const BookListing = () => {
         setData(data);
         const reviewsPromises = data.map(async (book) => {
           const responseReviews = await fetch(
-            `http://localhost:8080/api/review/book/${book.bookId}`
+            `${apiUrl}/review/book/${book.bookId}`
           );
           const reviewsData = await responseReviews.json();
           return { [book.bookId]: reviewsData };

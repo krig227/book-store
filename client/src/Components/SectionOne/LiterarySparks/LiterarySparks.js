@@ -3,12 +3,16 @@ import React, { useState, useEffect } from "react";
 
 const LiterarySparks = () => {
   const [data, setData] = useState({});
+  const apiUrl =
+    process.env.NODE_ENV === "development"
+      ? process.env.REACT_APP_API_URL
+      : process.env.REACT_APP_PROD_API_URL;
 
   useEffect(() => {
     const abortController = new AbortController();
     const { signal } = abortController;
 
-    fetch("http://localhost:8080/api/literarysparks", { signal })
+    fetch(`${apiUrl}/literarysparks`, { signal })
       .then((response) => response.json())
       .then((apiData) => {
         setData(apiData);

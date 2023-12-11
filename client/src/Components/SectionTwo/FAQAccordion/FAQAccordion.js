@@ -24,10 +24,15 @@ const FAQAccordion = () => {
     }
   };
 
+  const apiUrl =
+    process.env.NODE_ENV === "development"
+      ? process.env.REACT_APP_API_URL
+      : process.env.REACT_APP_PROD_API_URL;
+
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:8080/api/faq/all");
+        const response = await fetch(`${apiUrl}/faq/all`);
         if (!response.ok) {
           throw new Error("Failed to fetch FAQ data");
         }

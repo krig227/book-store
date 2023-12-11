@@ -4,11 +4,17 @@ import "./Index.css";
 const DiscountBanner = () => {
   const [data, setData] = useState({});
 
+  const apiUrl =
+    process.env.NODE_ENV === "development"
+      ? process.env.REACT_APP_API_URL
+      : process.env.REACT_APP_PROD_API_URL;
+
   useEffect(() => {
+    console.log(apiUrl);
     const abortController = new AbortController();
     const { signal } = abortController;
 
-    fetch("http://localhost:8080/api/bookOfTheWeek", { signal })
+    fetch(`${apiUrl}/bookOfTheWeek`, { signal })
       .then((response) => response.json())
       .then((apiData) => {
         setData(apiData);

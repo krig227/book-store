@@ -7,6 +7,10 @@ import Carousel from "../categoryCarousel/CarouselCategory";
 import Minicart from "../../MiniCart/Minicart";
 
 const SectionOne = () => {
+  const apiUrl =
+    process.env.NODE_ENV === "development"
+      ? process.env.REACT_APP_API_URL
+      : process.env.REACT_APP_PROD_API_URL;
   const images = [
     "http://drive.google.com/uc?export=view&id=1Y4dUDnUJEdeLfz526ZGCmqr-G8X8Vt5n",
     "http://drive.google.com/uc?export=view&id=1kv8JQQDvVgfwm51lOlAGrsTvIrdc5JG7",
@@ -21,10 +25,7 @@ const SectionOne = () => {
         <DiscountBanner />
         <LiterarySparks />
         <CustomCarousel images={images} />
-        <Carousel
-          apiEnd="http://localhost:8080/api/categories/trending"
-          catName="Trending"
-        />
+        <Carousel apiEnd={`${apiUrl}/categories/trending`} catName="Trending" />
       </div>
     </section>
   );

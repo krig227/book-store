@@ -18,6 +18,10 @@ const BookDetails = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [loggedIn, setLoggedIn] = useState(true); // Set to true for testing
   const dispatch = useDispatch();
+  const apiUrl =
+    process.env.NODE_ENV === "development"
+      ? process.env.REACT_APP_API_URL
+      : process.env.REACT_APP_PROD_API_URL;
   const handleSubmitReview = async (reviewData) => {
     try {
       // Check if the user is logged in
@@ -32,7 +36,7 @@ const BookDetails = () => {
         "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTQ1ZjI1M2YxM2ZhNzViNWRhYzhkNTUiLCJpYXQiOjE3MDEwNzA0NTEsImV4cCI6MTcwMTA3MjI1MX0.YCaNZDM3ajL5ag0Jo_4O-9HHkQh-bOmuDeoTqLri7ow";
 
       // Make a POST request to your API with the review data and bearer token
-      const response = await fetch("http://localhost:8080/api/review/add", {
+      const response = await fetch(`${apiUrl}/review/add`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -42,9 +46,7 @@ const BookDetails = () => {
       });
 
       if (response.ok) {
-        const updatedResponse = await fetch(
-          `http://localhost:8080/api/review/book/${bookId}`
-        );
+        const updatedResponse = await fetch(`${apiUrl}/review/book/${bookId}`);
         const updatedData = await updatedResponse.json();
 
         // Update the state with the new reviews
@@ -77,24 +79,20 @@ const BookDetails = () => {
   useEffect(() => {
     // Fetch author info
     const fetchBook = async () => {
-      const response = await fetch(`http://localhost:8080/api/books/${bookId}`);
+      const response = await fetch(`${apiUrl}/books/${bookId}`);
       const data = await response.json();
       setBook(data);
     };
 
     // Fetch reviews
     const fetchReviews = async () => {
-      const response = await fetch(
-        `http://localhost:8080/api/review/book/${bookId}`
-      );
+      const response = await fetch(`${apiUrl}/review/book/${bookId}`);
       const data = await response.json();
       setReviews(data);
     };
 
     const fetchReviewstats = async () => {
-      const response = await fetch(
-        `http://localhost:8080/api/review/stats/${bookId}`
-      );
+      const response = await fetch(`${apiUrl}/review/stats/${bookId}`);
       const data = await response.json();
       setReviewStats(data);
     };

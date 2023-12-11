@@ -55,7 +55,7 @@ const FAQAccordion = () => {
     return () => {
       window.removeEventListener("resize", handleWindowResize);
     };
-  }, [handleWindowResize]);
+  }, [handleWindowResize, apiUrl]);
 
   const handleDropdownClick = () => {
     if (dropdownRef.current) {

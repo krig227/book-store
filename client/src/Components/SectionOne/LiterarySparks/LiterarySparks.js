@@ -27,7 +27,7 @@ const LiterarySparks = () => {
     return () => {
       abortController.abort(); // Abort the request when the component unmounts
     };
-  }, []);
+  }, [apiUrl]);
 
   return (
     <div

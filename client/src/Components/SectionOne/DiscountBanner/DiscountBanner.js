@@ -7,7 +7,7 @@ const DiscountBanner = () => {
   const apiUrl =
     process.env.NODE_ENV === "development"
       ? process.env.REACT_APP_API_URL
-      : process.env.REACT_APP_API_URL;
+      : process.env.REACT_APP_PROD_API_URL;
 
   useEffect(() => {
     console.log(apiUrl);
@@ -29,7 +29,7 @@ const DiscountBanner = () => {
     return () => {
       abortController.abort(); // Abort the request when the component unmounts
     };
-  }, []);
+  }, [apiUrl]);
 
   return (
     <div className="Discount-Banner">

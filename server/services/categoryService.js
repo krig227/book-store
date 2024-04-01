@@ -4,7 +4,7 @@ async function getNewArrivals() {
   try {
     const endDate = new Date(); // Today's date
     const startDate = new Date();
-    startDate.setDate(endDate.getDate() - 90); // 90 days before today
+    startDate.setDate(endDate.getDate() - 365); // 90 days before today
 
     const newArrivals = await Book.find({
       publishedDate: {

@@ -12,10 +12,10 @@ const SectionOne = () => {
       ? process.env.REACT_APP_API_URL
       : process.env.REACT_APP_PROD_API_URL;
   const images = [
-    "http://drive.google.com/uc?export=view&id=1Y4dUDnUJEdeLfz526ZGCmqr-G8X8Vt5n",
-    "http://drive.google.com/uc?export=view&id=1kv8JQQDvVgfwm51lOlAGrsTvIrdc5JG7",
-    "http://drive.google.com/uc?export=view&id=1D1c64Ea6bQkzDL7VFgMAmWfb5U50ZKny",
-    "http://drive.google.com/uc?export=view&id=1mpPSS9P47ufDD6bNw0F6Y9luDoOtmyj0",
+    "https://drive.google.com/thumbnail?id=1Y4dUDnUJEdeLfz526ZGCmqr-G8X8Vt5n&sz=w1000",
+    "https://drive.google.com/thumbnail?id=1kv8JQQDvVgfwm51lOlAGrsTvIrdc5JG7&sz=w1000",
+    "https://drive.google.com/thumbnail?id=1D1c64Ea6bQkzDL7VFgMAmWfb5U50ZKny&sz=w1000",
+    "https://drive.google.com/thumbnail?id=1mpPSS9P47ufDD6bNw0F6Y9luDoOtmyj0&sz=w1000",
     // Add more image URLs as needed
   ];
 
